@@ -248,3 +248,7 @@
 .award-assets figcaption{padding:10px 4px 3px;font-size:12px;color:#647789}
 .award-assets figcaption a{color:#315f82;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:640px){.award-showcase{padding:16px}.award-intro h3{font-size:19px}.award-assets{grid-template-columns:1fr;gap:11px}.award-assets figure>img,.award-certificate-preview img{height:290px}}
+
+/* Give the company name a more readable, conventional header size. */
+.header .brand-type b{font-size:15px;letter-spacing:.045em}
+@media(max-width:640px){.header .brand-type b{font-size:12px;letter-spacing:.025em}}
