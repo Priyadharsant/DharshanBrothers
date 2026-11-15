@@ -252,3 +252,51 @@
 /* Give the company name a more readable, conventional header size. */
 .header .brand-type b{font-size:15px;letter-spacing:.045em}
 @media(max-width:640px){.header .brand-type b{font-size:12px;letter-spacing:.025em}}
+
+/* Site theme custom scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4d7da4 #edf3f7;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #edf3f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d7da4;
+  border-radius: 999px;
+  border: 2px solid #edf3f7;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #254f72;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #193a55;
+}
+
+
+/* Sustainable Development Goals */
+.sustainability{background:#f3f7fa}
+.sustainability h2{max-width:850px;font-size:clamp(34px,4.2vw,56px);line-height:1.14}
+.sustainability-intro{max-width:820px;font-size:17px!important;color:#40596b!important}
+.sdg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:30px 0}
+.sdg-card{display:grid;grid-template-columns:112px minmax(0,1fr);gap:18px;align-items:center;padding:16px;background:#fff;border:1px solid #dce6ee;border-radius:10px;min-width:0}
+.sdg-card img{display:block;width:112px;height:112px;object-fit:contain}
+.sdg-card span{font-size:10px;font-weight:700;letter-spacing:.1em;color:#4e789e}
+.sdg-card h3{margin:5px 0 8px;font:600 17px/1.35 Manrope,sans-serif;color:#263f53}
+.sdg-card p{margin:0;font-size:14px!important;line-height:1.7!important;color:#647789!important}
+.sdg-disclaimer{display:flex;flex-wrap:wrap;gap:12px 22px;padding-top:18px;border-top:1px solid #dce6ee}
+.sdg-disclaimer p{flex-basis:100%;margin:0;font-size:12px!important;line-height:1.7!important;color:#647789!important}
+.sdg-disclaimer a{display:inline-flex;gap:5px;align-items:center;color:#315f82;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.sdg-grid{grid-template-columns:1fr;gap:10px}.sdg-card{grid-template-columns:80px minmax(0,1fr);gap:13px;padding:13px}.sdg-card img{width:80px;height:80px}.sdg-card h3{font-size:16px}.sdg-card p{font-size:13px!important}.sustainability-intro{font-size:15px!important}}
+
+
