@@ -7,9 +7,9 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 
 const offerings = [
   { n: '01', icon: Flame, title: 'Energy-efficient burners', text: 'Thoughtfully engineered burner solutions for LPG, CNG and biogas applications.', tag: 'PRODUCTS' },
-  { n: '02', icon: Microscope, title: 'Research & development', text: 'Turning real-world needs into considered, practical energy technology.', tag: 'INNOVATION' },
+  { n: '02', icon: Microscope, title: 'Development & research', text: 'Turning real-world needs into considered, practical energy technology.', tag: 'INNOVATION' },
   { n: '03', icon: Atom, title: 'Smart LPG stove R&D', text: 'Developing next-generation cooking concepts with energy efficiency, connected monitoring and household safety in mind.', tag: 'NEXT GENERATION' },
-  { n: '04', icon: Sparkles, title: 'Engineering & innovation services', text: 'Product development, prototype support, consultancy, mentoring and industry–academia collaboration.', tag: 'COLLABORATION' },
+  { n: '04', icon: Sparkles, title: 'Innovation & engineering services', text: 'Product development, prototype support, consultancy, mentoring and industry–academia collaboration.', tag: 'COLLABORATION' },
 ];
 
 const sdgs = [

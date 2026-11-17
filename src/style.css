@@ -299,4 +299,24 @@ html {
 .sdg-disclaimer a{display:inline-flex;gap:5px;align-items:center;color:#315f82;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){.sdg-grid{grid-template-columns:1fr;gap:10px}.sdg-card{grid-template-columns:80px minmax(0,1fr);gap:13px;padding:13px}.sdg-card img{width:80px;height:80px}.sdg-card h3{font-size:16px}.sdg-card p{font-size:13px!important}.sustainability-intro{font-size:15px!important}}
 
+/* Requested content and presentation refinements */
+.feature-copy>p,.services-panel p{text-align:justify}
+.secondary-detail b,.rd-hero b{text-transform:capitalize}
+
+/* Collaboration updates: retain the supplied imagery with the revised stories. */
+.collaboration-updates>.collaboration-update:first-child{display:none}
+.collaboration-updates .text-update{grid-template-columns:140px minmax(0,1fr)}
+.collaboration-updates .text-update .update-monogram{display:none}
+.collaboration-updates .text-update::before{content:"";display:block;width:140px;height:130px;border-radius:7px;background:center/cover no-repeat}
+.collaboration-updates .text-update:nth-child(3)::before{background-image:url('/images/edii-agreement.jpg')}
+.collaboration-updates .annamalai-update:nth-child(4)::before{background-image:url('/images/startup-india-seed-fund-grant.jpg')}
+.collaboration-updates .annamalai-update p{font-size:0}
+.collaboration-updates .annamalai-update p::after{content:"Dr. Baskara Sethupathy, Founder & Director, received a grant through his startup, Dharshan Brothers Technologies.";font-size:13px;line-height:1.65;color:#647789}
+.collaboration-updates .edii-grant span,.collaboration-updates .text-update span{font-size:11px}
+.team>.grant-recognition{display:none}
+.certificate h3{font-size:0}
+.certificate h3::after{content:"A DPIIT Startup Recognition Certificate";font:600 17px Manrope,sans-serif}
+.sdg-disclaimer a:nth-of-type(2){display:none}
+@media(max-width:520px){.collaboration-updates .text-update{grid-template-columns:96px minmax(0,1fr)}.collaboration-updates .text-update::before{width:96px;height:110px}.collaboration-updates .annamalai-update p::after{font-size:12px}}
+
 
