@@ -26,7 +26,14 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [sent, setSent] = useState(false);
   const closeMenu = () => setMenuOpen(false);
-  const submit = (e) => { e.preventDefault(); setSent(true); };
+  const submit = (e) => {
+    e.preventDefault();
+    const [name, email, topic, message] = [...e.currentTarget.querySelectorAll('input, select, textarea')].map(({ value }) => value.trim());
+    const subject = `Website enquiry: ${topic || 'General enquiry'}`;
+    const body = `Name: ${name}\nEmail: ${email}\nTopic: ${topic || 'General enquiry'}\n\nMessage:\n${message}`;
+    window.location.href = `mailto:dbtechnologies2023@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setSent(true);
+  };
   return <>
     <div className="announcement"><span className="announce-dot"/> Engineering a more energy-conscious everyday <span className="announce-sep">·</span> Chennai, India</div>
     <header className="header">
